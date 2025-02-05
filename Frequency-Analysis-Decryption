@@ -62,7 +62,7 @@ string decText(const string& text, const vector<char>& tableText){
     for (const auto& pair : frequencies){
         cout << pair.first << ": " << pair.second << " " <<"\n";
     }
-   cout << endl;
+    cout << endl;
 
     //Step 3
     // Create substitution map
