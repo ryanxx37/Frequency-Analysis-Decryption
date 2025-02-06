@@ -51,14 +51,14 @@ string decText(const string& text, const vector<char>& tableText){
     }
 
     ///////////DEBUG///////////
-    cout << "\n[Before correction]Sorted letters based on frequency\n";
+    cout << "\nSorted letters based on frequency\n";
     for(char c : sortedLetters){
         cout << c << " ";
     }
     cout << endl;
     
     // Print the sorted letters and their frequencies
-    cout << "\n[Before correction]Sorted letters frequency\n";
+    cout << "\nSorted letters frequency\n";
     for (const auto& pair : frequencies){
         cout << pair.first << ": " << pair.second << " " <<"\n";
     }
@@ -100,14 +100,6 @@ string decText(const string& text, const vector<char>& tableText){
     substitutionMap['f'] = 'q';
     substitutionMap['z'] = 'j';
     
-    //////////DEBUG///////////
-    cout << "\nSorted letters after correction\n";
-    for(auto it = substitutionMap.cbegin(); it != substitutionMap.cend(); ++it){
-        cout << it->second << " ";
-    }
-
-    cout << endl;
-    cout << endl;
     //////////DEBUG///////////
     cout << "\nSubstitution Map after correction\n";
     for(auto it = substitutionMap.cbegin(); it != substitutionMap.cend(); ++it){
