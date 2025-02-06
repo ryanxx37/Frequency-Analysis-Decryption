@@ -75,7 +75,7 @@ string decText(const string& text, const vector<char>& tableText){
     ///////////DEBUG///////////
     cout << "\n[Before correction]Substitution Map\n";
     for(auto it = substitutionMap.cbegin(); it != substitutionMap.cend(); ++it){
-        cout << "[" << it->first << " : " << it->second << "]" << " " << "\t";
+        cout << "[" << it->first << " : " << it->second << "]" << "\t";
     }
     cout << endl;
     cout << endl;
@@ -103,7 +103,7 @@ string decText(const string& text, const vector<char>& tableText){
     //////////DEBUG///////////
     cout << "\nSubstitution Map after correction\n";
     for(auto it = substitutionMap.cbegin(); it != substitutionMap.cend(); ++it){
-        cout << "[" << it->first << " : " << it->second << "]" << " " << "\t";
+        cout << "[" << it->first << " : " << it->second << "]" << "\t";
     }
     cout << endl;
     cout << endl;
